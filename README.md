@@ -1,5 +1,6 @@
-Role Name
-=========
+ansible-role-sublimetext
+========================
+[![Build Status](https://travis-ci.org/vaulttec/ansible-role-sublimetext.svg?branch=master)](https://travis-ci.org/vaulttec/ansible-role-sublimetext)
 
 Ansible role to install [Sublime Text 3](https://www.sublimetext.com/3) from tarball and configure a desktop shortcut.
 
