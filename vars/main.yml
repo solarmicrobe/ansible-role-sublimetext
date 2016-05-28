@@ -1,0 +1,6 @@
+---
+sublimetext_architecture: "{% if ansible_architecture == 'x86_64' %}x64{% else %}x32{% endif %}"
+sublimetext_archive_url: "https://download.sublimetext.com/sublime_text_3_build_{{ sublimetext_build }}_{{ sublimetext_architecture }}.tar.bz2"
+sublimetext_archive_tmp: "/tmp/sublimetext_build_{{ sublimetext_build }}.tar.bz2"
+sublimetext_home: "{{ sublimetext_dest }}/sublime_text_3"
+sublimetext_exec: "/usr/bin/{{ sublimetext_link_name }}"

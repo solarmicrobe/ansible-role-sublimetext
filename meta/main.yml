@@ -1,0 +1,19 @@
+galaxy_info:
+  author: Torsten Juergeleit
+  description: An Ansible role to install Sublime Text 3 from tarball and create a desktop shortcut.
+
+  license: MIT
+
+  min_ansible_version: 1.4
+
+  platforms:
+    - name: GenericLinux
+      versions:
+      - all
+  
+  galaxy_tags:
+    - development
+    - texteditor
+    - ide
+
+dependencies: []
