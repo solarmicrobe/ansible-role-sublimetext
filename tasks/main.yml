@@ -3,6 +3,7 @@
 # @see http://software-engineer.gatsbylee.com/how-to-install-sublime-3-on-centos-7-rhel-7/
 
 - name: Install required packages
+  become: true
   action: "{{ ansible_pkg_mgr }} name={{ item }} state=present"
   with_items:
     - tar
@@ -14,13 +15,16 @@
   tags: ["packages", "sublimetext"]
 
 - name: Extract archive
+  become: true
   unarchive: src={{ sublimetext_archive_tmp }} dest={{ sublimetext_dest }} copy=no
   tags: ["packages", "sublimetext"]
 
 - name: Create symlink
+  become: true
   file: src={{ sublimetext_home }}/sublime_text dest={{ sublimetext_exec }} state=link
   tags: ["configuration", "sublimetext"]
 
 - name: Create desktop shortcut
+  become: true
   template: src=sublime.desktop.j2 dest=/usr/share/applications/sublime3.desktop
   tags: ["configuration", "sublimetext"]
