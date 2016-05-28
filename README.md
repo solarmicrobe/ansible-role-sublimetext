@@ -23,7 +23,7 @@ sublimetext_build: 3114
 # Sublime Text tarball is extracted here
 sublimetext_dest: /opt/
 
-# A sym-link with this name is created in `/usr/bin/`pinting to the exec `sublime_text` 
+# A sym-link with this name is created in '/usr/bin/' pointing to the exec 'sublime_text'
 sublimetext_link_name: sublime
 ```
 
