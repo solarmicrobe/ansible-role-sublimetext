@@ -1,6 +1,6 @@
 galaxy_info:
   author: Torsten Juergeleit
-  description: An Ansible role to install Sublime Text 3 from tarball and create a desktop shortcut.
+  description: Install Sublime Text 3 from tarball and create a desktop shortcut
 
   license: MIT
 
