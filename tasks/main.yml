@@ -5,9 +5,7 @@
 - name: Install required packages
   become: true
   action: "{{ ansible_pkg_mgr }} name={{ item }} state=present"
-  with_items:
-    - tar
-    - bzip2
+  with_items: "{{ sublimetext_dependencies }}"
   tags: ["packages", "sublimetext"]
 
 - name: Download archive
